@@ -1,4 +1,6 @@
 from email.mime import image
+from email.policy import default
+from tokenize import blank_re
 from django.db import models
 from cloudinary.models import CloudinaryField
 
@@ -18,4 +20,8 @@ class Post(models.Model):
     )
     image = CloudinaryField(
         'image', blank=True, db_index=True
+    )
+    likes = models.IntegerField(
+        'likes', blank=True, default=0
+
     )

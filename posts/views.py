@@ -37,3 +37,10 @@ def edit(request, post_id):
             return HttpResponse("not valid")
 
     return render(request, 'edit.html', {'posts': posts})
+
+    
+def like(request, post_id):
+    like= Post.objects.get(id=post_id)
+    like.likes += 1
+    like.save()
+    return HttpResponseRedirect("/")

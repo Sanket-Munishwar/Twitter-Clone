@@ -24,10 +24,15 @@ body{
     border-bottom: 1px solid #CCC;
     
 }
-.content h1{
+.content .home-col{
+    display: flex;
+    gap: 2%;
+    padding-left: 2%;
+    border-bottom: 1px solid #CCC;
+}
+.content h3{
     padding-left: 20px;
     font-family: sans-serif;
-   
     
 }
 .content .image {
@@ -84,7 +89,7 @@ Forms
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 1px;
     
 }
 .post_form .submit .tweet{
@@ -97,12 +102,12 @@ Forms
 }
 .post_form .namebar{
     width:100%;
-    padding: 0% 0% 1% 3%;;
+    padding: 0% 1% 1% 1%;;
 }  
 .edit-input input{
     width: 78%;
 }
-#files1{
+#files{
     width: 78%;
 }
 .post_form textarea{
