@@ -65,7 +65,8 @@ Forms
     width: 93%;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
+    background-color: aquamarine;
  
  }
  .post_form .name{
@@ -125,7 +126,7 @@ Post
 .posts li{
     display: flex; 
     border-bottom: 1px solid #CCC;
-    padding: 17px;
+    padding: 30px;
     list-style: none;
     position: relative;
 }
@@ -165,6 +166,7 @@ Post
     width: 50px;
     padding-right: 10px;
 }
+
 .posts li .name_time {
     display:flex;
 }
@@ -199,8 +201,15 @@ button.cancelbtn {
     height: 5vh;
     border: none;
 }
+@media screen and (max-width:500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+    .post_form input {
+        width: 48%;
+    }
+}
 a#cancel {
     color: white;
     text-decoration: none;
 }
-
