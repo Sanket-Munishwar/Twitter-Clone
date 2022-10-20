@@ -42,25 +42,30 @@
           <a href="/edit/{{ post.id }}/">edit</a><br /><hr/>
           <a href="/delete/{{ post.id }}/">delete</a>
         </div>
-      </div>
+     
       
-          <div class="name_body">
-              <img src="{% static 'img/glob.png' %}" class="home_icon"/>
-              <div class="name_time">
-                  <div class="name">{{ post.name }}</div>
-                  <div class="datetime"> {{ post.created_at }}</div>
-              </div>
-              
-              <p> {{ post.body }}</p>
-              {% if post.image.url %}
-              <img src="{{post.image.url}}" alt="" class="post-img">
-              {% endif %}
-              <div class="like">
-                <div><a href="/like/{{ post.id }}/" ><img src="{% static 'img/heart.png' %}"  class="likebtn"/></a></div>
-                  {{post.likes}}
-              </div>
+        <div class="name_body">
+          <div class="post-logo">
+            <img src="{% static 'img/glob.png' %}" class="home_icon"/>
           </div>
-      </div>
+          <div class="posts-content">
+            <div class="name_time">
+              <div class="name">{{ post.name }}</div>
+              <div class="datetime"> {{ post.created_at }}</div>
+            </div>
+          
+            <p> {{ post.body }}</p>
+            {% if post.image.url %}
+            <img src="{{post.image.url}}" alt="" class="post-img">
+            {% endif %}
+            <div class="like">
+              <div><a href="/like/{{ post.id }}/" ><img src="{% static 'img/heart.png' %}"  class="likebtn"/></a></div>
+                {{post.likes}}
+            </div>
+          </div>
+          
+        </div>
+      
 
       </li>
       {% endfor %}

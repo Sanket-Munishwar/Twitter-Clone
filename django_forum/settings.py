@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = [
-    'http://0.0.0.0:3000'
+    'http://0.0.0.0:3000', 'https://Twitter-clone.sanket-munishwa.repl.co'
 ]
 
 
