@@ -66,7 +66,7 @@ Forms
     margin-bottom: 10px;
     padding: 10px;
     border: 0px solid #ccc;
-    background-color: aquamarine;
+    background-color: rgb(249, 249, 215);
  
  }
  .post_form .name{
@@ -104,6 +104,7 @@ Forms
 .post_form .namebar{
     width:100%;
     padding: 0% 1% 1% 1%;;
+    
 }  
 .edit-input input{
     width: 78%;
@@ -115,7 +116,7 @@ Forms
     width: 72%;
     padding: 0% 27% 10% 0%;
     border: none;
-    background-color:bisque;
+    background-color:rgb(249, 230, 208);
 }
 /*
 Post
